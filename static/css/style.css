@@ -1,0 +1,107 @@
+*{
+    text-align: center;
+    font-family: sans-serif;
+}
+#wrapper{
+    max-width: 1100px;
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+}
+
+h1{
+    display: inline-block;
+    color: gold;
+    -webkit-text-stroke: 1px black;  
+    text-shadow:
+        3px 3px 0 #000,
+       -1px -1px 0 #000,  
+        1px -1px 0 #000,
+       -1px  1px 0 #000,
+        1px  1px 0 #000;
+}
+
+span{
+    float: left;
+    clear: both;
+    margin: 6px;
+}
+
+#gold{
+    float: left;
+    text-align: right;
+    width: 100px;
+    border: 3px solid black;
+    padding: 3px;
+}
+.goldbar{
+    height: 30px;
+    padding: 6px;
+}
+#activitiescontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-basis: 100%;
+}
+.activities{
+    flex: 0 2 18%;
+    min-width: 200px;
+    margin-top: 10px;
+    display: inline-block;
+    /*padding: 50px;*/
+    border: 3px solid black;
+}
+.buttons{
+    display: inline-block;
+    padding: 6px 12px;
+    color: white;
+    text-decoration: none;
+    vertical-align: middle;
+    border-radius: 4px;
+    border: 1px solid gray;
+    background-color: #5cb85c;
+    box-shadow: 0px 5px 5px #888;
+    margin-top: 10px;
+}
+#casinobutton{
+    background: rgba(92,184,92,1);
+    background: -moz-linear-gradient(left, rgba(92,184,92,1) 0%, rgba(217,84,79,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(92,184,92,1)), color-stop(100%, rgba(217,84,79,1)));
+    background: -webkit-linear-gradient(left, rgba(92,184,92,1) 0%, rgba(217,84,79,1) 100%);
+    background: -o-linear-gradient(left, rgba(92,184,92,1) 0%, rgba(217,84,79,1) 100%);
+    background: -ms-linear-gradient(left, rgba(92,184,92,1) 0%, rgba(217,84,79,1) 100%);
+    background: linear-gradient(to right, rgba(92,184,92,1) 0%, rgba(217,84,79,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5cb85c', endColorstr='#d9544f', GradientType=1 );
+}
+
+#log{
+    width: 100%;
+    border: 3px solid black;
+    height: 200px;
+    overflow: scroll;
+}
+
+p{
+    text-align: left;
+    margin: 3px;
+}
+
+.green{
+    color: green;
+}
+.red{
+    color: red;
+}
+
+a{
+    display: inline-block;
+    padding: 6px 12px;
+    color: white;
+    text-decoration: none;
+    vertical-align: middle;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    background-color: #d9534f;
+    box-shadow: 0px 5px 5px #888;
+    margin-top: 10px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ninja Gold</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<div id="wrapper">
+    <h1>Ninja Gold!</h1>
+    <div class="goldbar">
+        <span>Your Gold</span>
+        <div id="gold">{{ gold }}</div>
+    </div>
+    <div id="activitiescontainer">
+        <div class="activities">
+            <h3>Farm</h3>
+            <h4>(earns 10-20 gold)</h4>
+            <form action="/process" method="POST">
+                <input type="hidden" name="action" value="farm">
+                <input type="submit" value="farm" class="buttons">
+            </form>
+            <br>
+        </div>
+        <div class="activities">
+            <h3>Cave</h3>
+            <h4>(earns 5-10 gold)</h4>
+            <form action="/process" method="POST">
+                <input type="hidden" name="action" value="cave">
+                <input type="submit" value="cave" class="buttons">
+            </form>
+            <br>
+        </div>
+        <div class="activities">
+            <h3>House</h3>
+            <h4>(earns 2-5 gold)</h4>
+            <form action="/process" method="POST">
+                <input type="hidden" name="action" value="house">
+                <input type="submit" value="house" class="buttons">
+            </form>
+            <br>
+        </div>
+        <div class="activities">
+            <h3>Casino</h3>
+            <h4>(earns/takes 0-50 gold)</h4>
+            <form action="/process" method="POST">
+                <input type="hidden" name="action" value="casino">
+                <input type="submit" value="casino" class="buttons" id="casinobutton">
+            </form>
+            <br>
+        </div>
+    </div>
+    <br>
+    <span id="activitiestitle">Activities:</span><br><br>
+    <div id="log">
+        {{ log }}
+    </div>
+    <a href="/reset">Reset the Game</a>
+</div>
+</body>
+</html>
